@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.trelloGet.Get" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-20T23:31:54" hostname="LAPTOP-HKUUJHFK" time="4.984">
+<testsuite name="com.automation.trelloGet.Get" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-20T23:53:27" hostname="LAPTOP-HKUUJHFK" time="4.426">
   <properties/>
-  <testcase name="getBoard()" classname="com.automation.trelloGet.Get" time="4.984"/>
+  <testcase name="getBoard()" classname="com.automation.trelloGet.Get" time="4.426"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://api.trello.com/1/boards?key=a5c14264c267638eef4d4bc13e666b81&token=165d955e1978e5d33f6d7333d71f2d38219f7795c8146a1056439233ed856c63
 Proxy:			<none>
@@ -19,7 +19,7 @@ Body:
     "name": "RequestManagerTest"
 }
 Request method:	GET
-Request URI:	https://api.trello.com/1/boards/62d8906bc1054c176f5e872f?key=a5c14264c267638eef4d4bc13e666b81&token=165d955e1978e5d33f6d7333d71f2d38219f7795c8146a1056439233ed856c63
+Request URI:	https://api.trello.com/1/boards/62d8957897a4ea3fc3fb39d5?key=a5c14264c267638eef4d4bc13e666b81&token=165d955e1978e5d33f6d7333d71f2d38219f7795c8146a1056439233ed856c63
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=a5c14264c267638eef4d4bc13e666b81
@@ -43,7 +43,7 @@ Pragma: no-cache
 Expires: Thu, 01 Jan 1970 00:00:00
 X-Trello-Version: 1.143845.0
 X-Trello-Environment: Production
-Set-Cookie: dsc=41e01116b747f7700a6c0d04b53072c66a0d8222129c8104f8edd92716e85904; Path=/; Expires=Sat, 23 Jul 2022 23:31:57 GMT; Secure
+Set-Cookie: dsc=956e19861bb1de5c846ed600158ba3cc05fa64f0dca5690ceea2feba9be6679c; Path=/; Expires=Sat, 23 Jul 2022 23:53:30 GMT; Secure
 Set-Cookie: preAuthProps=s%3A58ebe3063074d7ac5befd603%3AisEnterpriseAdmin%3Dfalse.2hI822aZb9Xx9OkVAc%2BKf7EuuX9s3ZUur3Kla4bkg7U; Path=/; HttpOnly
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE
@@ -51,33 +51,33 @@ Access-Control-Allow-Headers: Authorization, Accept, Content-Type
 Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
 X-Rate-Limit-Api-Token-Interval-Ms: 10000
 X-Rate-Limit-Api-Token-Max: 100
-X-Rate-Limit-Api-Token-Remaining: 98
+X-Rate-Limit-Api-Token-Remaining: 99
 X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
 X-Rate-Limit-Db-Query-Time-Max: 7200000
 X-Rate-Limit-Db-Query-Time-Remaining: 7199990
 X-Rate-Limit-Api-Key-Interval-Ms: 10000
 X-Rate-Limit-Api-Key-Max: 300
-X-Rate-Limit-Api-Key-Remaining: 298
+X-Rate-Limit-Api-Key-Remaining: 299
 X-Rate-Limit-Member-Interval-Ms: 10000
 X-Rate-Limit-Member-Max: 375
-X-Rate-Limit-Member-Remaining: 372
-X-Server-Time: 1658359917086
+X-Rate-Limit-Member-Remaining: 374
+X-Server-Time: 1658361210279
 Content-Type: application/json; charset=utf-8
-Date: Wed, 20 Jul 2022 23:31:57 GMT
+Date: Wed, 20 Jul 2022 23:53:30 GMT
 Content-Encoding: gzip
-X-Envoy-Upstream-Service-Time: 34
+X-Envoy-Upstream-Service-Time: 33
 Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
 Strict-Transport-Security: max-age=63072000; preload
 X-Content-Type-Options: nosniff
 X-Xss-Protection: 1; mode=block
-Atl-Traceid: 874a71c5d29037ea
+Atl-Traceid: 5e42275c1ac6671f
 Report-To: {"group": "endpoint-1", "max_age": 600, "endpoints": [{"url": "https://dj9s4kmieytgz.cloudfront.net"}], "include_subdomains": true}
 Nel: {"report_to": "endpoint-1", "max_age": 600, "include_subdomains": true, "failure_fraction": 0.001}
 Server: globaledge-envoy
 Transfer-Encoding: chunked
 
 {
-    "id": "62d8906bc1054c176f5e872f",
+    "id": "62d8957897a4ea3fc3fb39d5",
     "name": "RequestManagerTest",
     "desc": "",
     "descData": null,
@@ -85,8 +85,8 @@ Transfer-Encoding: chunked
     "idOrganization": "60c9edb767b73f1aeda03fe9",
     "idEnterprise": null,
     "pinned": false,
-    "url": "https://trello.com/b/NcgIOSLp/requestmanagertest",
-    "shortUrl": "https://trello.com/b/NcgIOSLp",
+    "url": "https://trello.com/b/mXuge2c4/requestmanagertest",
+    "shortUrl": "https://trello.com/b/mXuge2c4",
     "prefs": {
         "permissionLevel": "private",
         "hideVotes": false,
@@ -103,32 +103,32 @@ Transfer-Encoding: chunked
         ],
         "switcherViews": [
             {
-                "_id": "62d8906bc1054c176f5e8730",
+                "_id": "62d8957897a4ea3fc3fb39d6",
                 "viewType": "Board",
                 "enabled": true
             },
             {
-                "_id": "62d8906bc1054c176f5e8731",
+                "_id": "62d8957897a4ea3fc3fb39d7",
                 "viewType": "Table",
                 "enabled": true
             },
             {
-                "_id": "62d8906bc1054c176f5e8732",
+                "_id": "62d8957897a4ea3fc3fb39d8",
                 "viewType": "Calendar",
                 "enabled": false
             },
             {
-                "_id": "62d8906bc1054c176f5e8733",
+                "_id": "62d8957897a4ea3fc3fb39d9",
                 "viewType": "Dashboard",
                 "enabled": false
             },
             {
-                "_id": "62d8906bc1054c176f5e8734",
+                "_id": "62d8957897a4ea3fc3fb39da",
                 "viewType": "Timeline",
                 "enabled": false
             },
             {
-                "_id": "62d8906bc1054c176f5e8735",
+                "_id": "62d8957897a4ea3fc3fb39db",
                 "viewType": "Map",
                 "enabled": false
             }
@@ -181,7 +181,7 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	DELETE
-Request URI:	https://api.trello.com/1/boards/62d8906bc1054c176f5e872f?key=a5c14264c267638eef4d4bc13e666b81&token=165d955e1978e5d33f6d7333d71f2d38219f7795c8146a1056439233ed856c63
+Request URI:	https://api.trello.com/1/boards/62d8957897a4ea3fc3fb39d5?key=a5c14264c267638eef4d4bc13e666b81&token=165d955e1978e5d33f6d7333d71f2d38219f7795c8146a1056439233ed856c63
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=a5c14264c267638eef4d4bc13e666b81

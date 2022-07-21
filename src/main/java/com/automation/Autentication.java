@@ -20,4 +20,14 @@ public class Autentication {
         return requestSpecification;
     }
 
+    private RequestSpecification buildSpecWithToken(){
+        String token = RequestManager.post("token", "{user:test, pw: test}").then().extract().path("token");
+        return requestSpecification = new RequestSpecBuilder().setBaseUri("https://api.trello.com")
+                .addHeader("Content-Type","application/json")
+                .addHeader("Authorixation", token)
+                .addQueryParam("key", key )
+                .addQueryParam("token", token)
+                .build();
+    }
+
 }
