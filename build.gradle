@@ -18,6 +18,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
 
+    implementation 'io.cucumber:cucumber-java:7.0.0'
+    implementation 'io.cucumber:cucumber-junit:7.0.0'
 
 }
 
