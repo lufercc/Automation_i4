@@ -34,6 +34,6 @@ public class Delete {
         given().spec(requestSpecification).log().all()
                 .delete("/1/boards/" + id)
                 .then().log().all()
-                .assertThat().statusCode(200);
+                .assertThat().statusCode(201);
     }
 }

@@ -29,6 +29,11 @@ public class TrelloPost {
                 .then().extract().path("id");
     }
 
+    @Test void Other(){
+        given().header("Accept", "Application/json")
+                .get("https://api.trello.com/1/boards/{id}");
+    }
+
     @AfterEach
     public void deletBoard(){
         given().spec(requestSpecification).log().all()

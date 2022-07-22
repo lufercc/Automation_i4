@@ -5,8 +5,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class Autentication {
     RequestSpecification requestSpecification;
-    private static final String key = "a5c14264c267638eef4d4bc13e666b81";
-    private static final String token = "165d955e1978e5d33f6d7333d71f2d38219f7795c8146a1056439233ed856c63";
+    private static final String key = "0bfc5b1373158a43175bdc1b315fd3e4";
+    private static final String token = "c38ec3003ecfe94785f3151072cffc66cb0b6f95045ac349d0cb8ba1440a7cc1";
 
     public Autentication(){
         requestSpecification = new RequestSpecBuilder().setBaseUri("https://api.trello.com")

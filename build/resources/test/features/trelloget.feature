@@ -1,12 +1,18 @@
 Feature: This is my first test case
 
-  Scenario: get all boards
-    Given Send a request to "/1/members/me/boards"
+  Scenario: Como usuario quiero obtener la lista de todos mis boards
+    Given Como usuario quiero usar este endpoint "/1/members/me/boards"
     When I send a "GET" the request
-    Then I expect 200
+    Then I expect the status code is 200
 
-  Scenario: get all boards
-    Given Send a request to "/1/members/me/boards/meboards"
-#    And I have the body "{'name' : 'new Board'}"
+  Scenario: Como usuario quiero verificar q el status code es 404 cuando envio un request a un endpoint no existente
+    Given Como usuario quiero usar este endpoint "/1/members/me/boards/nonexist"
     When I send a "GET" the request
-    Then I expect 200
+    Then I expect the status code is 404
+
+  @createBoard
+  Scenario: Como usuario quiero crear un boards
+    Given Como usuario quiero usar este endpoint "/1/boards/"
+    And I have the body "{\"name\" : \"new Board from Cucucmber 2\"}"
+    When I send a "POST" the request
+    Then I expect the status code is 200

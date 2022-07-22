@@ -33,8 +33,8 @@ public class Get {
         Response res = RequestManager.get("/1/boards/" + board1.getId());
         res.then().log().all().statusCode(200);
         Board board2 = res.as(Board.class);
-        Assertions.assertEquals("RequestManagerTest", board2.getName());
-        Assertions.assertFalse(!board2.isClosed(), "The board its closed");
+        Assertions.assertEquals("RequestManagerTest", board2.getName(), "MY MESSAGE the name is not equals");
+        Assertions.assertFalse(board2.isClosed(), "The board its closed");
     }
 
     @AfterEach
