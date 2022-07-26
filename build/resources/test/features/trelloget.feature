@@ -10,9 +10,20 @@ Feature: This is my first test case
     When I send a "GET" the request
     Then I expect the status code is 404
 
-  @createBoard
+  @deleteB @deleteA
   Scenario: Como usuario quiero crear un boards
     Given Como usuario quiero usar este endpoint "/1/boards/"
     And I have the body "{\"name\" : \"new Board from Cucucmber 2\"}"
     When I send a "POST" the request
     Then I expect the status code is 200
+
+  @deleteA @newBoard
+  Scenario: Como usuario quiero obter un  boards especifico
+    Given Como usuario quiero usar este endpoint "/1/boards/[[id]]"
+    When I send a "GET" the request
+    Then I expect the status code is 200
+    And I expect the name is "CREATEDFROMHOOK"
+
+#  usar backgrounds
+#  1. tienen crear el board
+#  2. obternet el bord creado

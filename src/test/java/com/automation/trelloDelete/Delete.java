@@ -1,7 +1,6 @@
 package com.automation.trelloDelete;
 
-import com.automation.Autentication;
-import io.restassured.builder.RequestSpecBuilder;
+import com.automation.api.Autentication;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

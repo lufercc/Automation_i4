@@ -1,7 +1,6 @@
 package com.automation.post;
 
-import com.automation.Autentication;
-import com.automation.Trello;
+import com.automation.api.Autentication;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

@@ -21,6 +21,27 @@ dependencies {
     implementation 'io.cucumber:cucumber-java:7.0.0'
     implementation 'io.cucumber:cucumber-junit:7.0.0'
 
+    implementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '7.0.0'
+
+
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+
+task MyCucumber(){
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'com.automation', 'src/test/resources']
+        }
+    }
 }
 
 test {
