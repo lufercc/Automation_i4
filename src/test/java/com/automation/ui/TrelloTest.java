@@ -1,5 +1,6 @@
 package com.automation.ui;
 
+import com.automation.ui.pageObject.TrelloLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -35,10 +37,28 @@ public class TrelloTest {
         String loginButtonLoc = "//input[@id=\"login\"]";////input[@id="login"]
         String atlacionLoginButton = "//button[@id='login-submit']";
 
+        //
+//        String trelloLabel = "//div[text()= 'Trello']";
+
         driver.findElement(By.xpath(userLoc)).sendKeys("autotester248@gmail.com");
         driver.findElement(By.xpath(loginButtonLoc)).click();
-        Thread.sleep(1500);
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(atlacionLoginButton)));
+        driver.findElement(By.xpath(pwLoc)).sendKeys("password");
+        driver.findElement(By.xpath(atlacionLoginButton)).click();
+    }
+
+    @Test
+    public void loginTrello2() throws InterruptedException {
+        driver.get("https://trello.com/login");
+        String pwLoc = "//input[@id='password']";
+        String atlacionLoginButton = "//button[@id='login-submit']";
+
+        TrelloLoginPage trelloLogin = new TrelloLoginPage(driver);
+        trelloLogin.Login("autotester248@gmail.com");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(atlacionLoginButton)));
         driver.findElement(By.xpath(pwLoc)).sendKeys("password");
         driver.findElement(By.xpath(atlacionLoginButton)).click();
     }
