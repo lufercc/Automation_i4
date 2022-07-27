@@ -23,6 +23,14 @@ dependencies {
 
     implementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '7.0.0'
 
+    /// UI TEST
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.3.0'
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.2.1'
+
+
+
 
 }
 

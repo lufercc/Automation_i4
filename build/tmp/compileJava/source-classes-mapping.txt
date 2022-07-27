@@ -1,8 +1,0 @@
-com/automation/trelloObjects/Board.java
- com.automation.trelloObjects.Board
-com/automation/api/Autentication.java
- com.automation.api.Autentication
-com/automation/api/RequestManager.java
- com.automation.api.RequestManager
-com/automation/api/Helper.java
- com.automation.api.Helper
