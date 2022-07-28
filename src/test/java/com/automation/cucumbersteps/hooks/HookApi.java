@@ -1,15 +1,15 @@
-package com.automation.cucumbersteps;
+package com.automation.cucumbersteps.hooks;
 
-import com.automation.api.Helper;
-import com.automation.api.RequestManager;
+import com.automation.api.core.Helper;
+import com.automation.api.core.RequestManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class Hook {
+public class HookApi {
 
     Helper helper;
 
-    public Hook(Helper helper) {
+    public HookApi(Helper helper) {
         this.helper = helper;
     }
 

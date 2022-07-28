@@ -1,6 +1,7 @@
 package com.automation.ui;
 
-import com.automation.ui.pageObject.TrelloLoginPage;
+import com.automation.ui.pages.AtlasianLoginPage;
+import com.automation.ui.pages.TrelloLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,7 +27,7 @@ public class TrelloTest {
 
     @AfterEach
     public void teardown(){
-//        driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -51,15 +52,8 @@ public class TrelloTest {
     @Test
     public void loginTrello2() throws InterruptedException {
         driver.get("https://trello.com/login");
-        String pwLoc = "//input[@id='password']";
-        String atlacionLoginButton = "//button[@id='login-submit']";
-
         TrelloLoginPage trelloLogin = new TrelloLoginPage(driver);
-        trelloLogin.Login("autotester248@gmail.com");
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(atlacionLoginButton)));
-        driver.findElement(By.xpath(pwLoc)).sendKeys("password");
-        driver.findElement(By.xpath(atlacionLoginButton)).click();
+        AtlasianLoginPage atlaLogin = trelloLogin.Login("autotester248@gmail.com");
+        atlaLogin.loginAtlasian("password");
     }
 }

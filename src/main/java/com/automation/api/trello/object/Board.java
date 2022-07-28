@@ -1,4 +1,4 @@
-package com.automation.trelloObjects;
+package com.automation.api.trello.object;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,7 +1,7 @@
-package com.automation.cucumbersteps;
+package com.automation.cucumbersteps.api;
 
-import com.automation.api.Helper;
-import com.automation.api.RequestManager;
+import com.automation.api.core.Helper;
+import com.automation.api.core.RequestManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

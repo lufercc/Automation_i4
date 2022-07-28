@@ -1,4 +1,4 @@
-package com.automation.cucumbersteps;
+package com.automation.cucumbersteps.ui;
 
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;

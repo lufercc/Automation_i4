@@ -1,4 +1,4 @@
-package com.automation.api;
+package com.automation.api.core;
 
 import io.restassured.response.Response;
 

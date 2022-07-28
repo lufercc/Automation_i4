@@ -1,5 +1,6 @@
-package com.automation.api;
+package com.automation.api.core;
 
+import com.automation.api.core.Autentication;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.given;

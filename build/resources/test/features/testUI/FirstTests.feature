@@ -5,6 +5,7 @@ Feature: Open PAges
     When I go to "https://www.google.com"
     Then Verifico que la URL sea "https://www.google.com/"
 
+
   Scenario: Como Usuario quiero abrir las pagina de Trello
     Given I Open The Browser
     When I go to "https://www.youtube.com"

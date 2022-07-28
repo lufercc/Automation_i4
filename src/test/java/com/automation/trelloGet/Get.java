@@ -1,8 +1,8 @@
 package com.automation.trelloGet;
 
-import com.automation.api.Autentication;
-import com.automation.api.RequestManager;
-import com.automation.trelloObjects.Board;
+import com.automation.api.core.Autentication;
+import com.automation.api.core.RequestManager;
+import com.automation.api.trello.object.Board;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.AfterEach;

@@ -1,8 +1,9 @@
-package com.automation.ui.pageObject;
+package com.automation.ui.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class TrelloLoginPage {
 
@@ -16,10 +17,12 @@ public class TrelloLoginPage {
 
     public TrelloLoginPage(WebDriver driver){
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-    public void Login(String userName){
+    public AtlasianLoginPage Login(String userName){
         userInput.sendKeys(userName);
         loginButton.click();
+        return new AtlasianLoginPage(driver);
     }
 }

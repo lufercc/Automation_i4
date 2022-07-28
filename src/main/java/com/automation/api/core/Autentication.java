@@ -1,6 +1,5 @@
-package com.automation.api;
+package com.automation.api.core;
 
-import com.automation.api.RequestManager;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 

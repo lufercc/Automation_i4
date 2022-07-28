@@ -1,6 +1,6 @@
 package com.automation.post;
 
-import com.automation.api.Autentication;
+import com.automation.api.core.Autentication;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
