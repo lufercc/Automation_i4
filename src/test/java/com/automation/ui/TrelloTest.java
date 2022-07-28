@@ -1,5 +1,6 @@
 package com.automation.ui;
 
+import com.automation.ui.driver.DriverManager;
 import com.automation.ui.pages.AtlasianLoginPage;
 import com.automation.ui.pages.TrelloLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -20,14 +21,12 @@ public class TrelloTest {
 
     @BeforeEach
     public void startChrome(){
-        WebDriverManager.chromedriver().setup();
-        this.driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
+        this.driver = DriverManager.getInstance().getDriver();
     }
 
     @AfterEach
     public void teardown(){
-        driver.quit();
+        this.driver.quit();
     }
 
     @Test
@@ -52,7 +51,7 @@ public class TrelloTest {
     @Test
     public void loginTrello2() throws InterruptedException {
         driver.get("https://trello.com/login");
-        TrelloLoginPage trelloLogin = new TrelloLoginPage(driver);
+        TrelloLoginPage trelloLogin = new TrelloLoginPage();
         AtlasianLoginPage atlaLogin = trelloLogin.Login("autotester248@gmail.com");
         atlaLogin.loginAtlasian("password");
     }

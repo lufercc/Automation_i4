@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.ui.TrelloTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-28T22:47:15" hostname="LAPTOP-HKUUJHFK" time="7.996">
+<testsuite name="com.automation.ui.TrelloTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-28T23:53:35" hostname="LAPTOP-HKUUJHFK" time="10.494">
   <properties/>
-  <testcase name="loginTrello2()" classname="com.automation.ui.TrelloTest" time="7.996"/>
-  <system-out><![CDATA[[[ChromeDriver: chrome on WINDOWS (e2cb1931495c19827b4ee9dfb1bd5af7)] -> xpath: //input[@id='user']]<======
-]]></system-out>
+  <testcase name="loginTrello2()" classname="com.automation.ui.TrelloTest" time="10.494"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 55176
+Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 56690
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 28, 2022 6:47:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 28, 2022 7:53:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 28, 2022 6:47:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 28, 2022 7:53:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
 ]]></system-err>
 </testsuite>

@@ -1,5 +1,6 @@
 package com.automation.ui.pages;
 
+import com.automation.ui.driver.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,8 +21,8 @@ public class AtlasianLoginPage {
     @FindBy(xpath = "//button[@id='login-submit']")
     private WebElement loginButton;
 
-    public AtlasianLoginPage(WebDriver driver){
-        this.driver = driver;
+    public AtlasianLoginPage(){
+        this.driver = DriverManager.getInstance().getDriver();
         this.wait = new WebDriverWait(this.driver, Duration.ofMillis(3000));
         PageFactory.initElements(driver, this);
         waitLoading();
