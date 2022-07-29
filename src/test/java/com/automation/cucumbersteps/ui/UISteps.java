@@ -14,10 +14,10 @@ import java.time.Duration;
 public class UISteps {
     WebDriver driver;
 
-    @After
-    public void closeDriver(){
-        driver.quit();
-    }
+//    @After
+//    public void closeDriver(){
+//        driver.quit();
+//    }
 
     @When("I go to {string}")
     public void iGoTo(String pageUrl) {
